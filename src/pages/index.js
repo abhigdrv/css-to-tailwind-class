@@ -46,12 +46,12 @@ const IndexPage = () => {
             </div>
             <div className="flex flex-col h-full flex-grow relative" style={{fontSize:'10px', maxWidth: '40% !important'}}>
                 FINAL HTML
-                <div className="row" style={{border:'1px solid', marginBottom:'5px'}}>
+                <div className="row" style={{border:'1px solid', marginBottom:'5px', height: '60vh', overflow: 'auto'}}>
                     {finalResHtml}
                 </div>
 
                 FINAL CSS
-                <div className="row" style={{border:'1px solid'}}>
+                <div className="row" style={{border:'1px solid', height: '30vh', overflow: 'auto'}}>
                     {finalResCss}
                 </div>
             </div>
