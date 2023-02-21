@@ -61,7 +61,7 @@ const handleCssFileModifiers = _.debounce(
     })
     finalCss(finalCssArray.join('\n'))
   },
-  2000
+  250
 )
 const handleHtmlFileModifiers = _.debounce(
   (mainFile, finalRes, allStyle, finalCss) => {
@@ -78,7 +78,7 @@ const handleHtmlFileModifiers = _.debounce(
     finalRes(convertedHtml)
     handleCssFileModifiers(allStyle, finalCss)
   },
-  2500
+  500
 )
 
 const Editor = ({ setCssTree, setEditorErrors, finalRes, finalCss }) => {
